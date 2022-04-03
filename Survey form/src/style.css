@@ -1,0 +1,42 @@
+body{
+  background:url(https://hips.hearstapps.com/hmg-prod/images/book-club-1587498197.png);
+  
+  font-family: 'Quicksand';font-size: 20px;
+  text-align:center;
+  margin:0;
+  padding:40px;
+  
+}
+h1{
+  color:#a76359;
+}
+#description{
+  font-style:italic;
+  padding:0 0 20px 0;
+}
+#survey-form{
+  background-color:white;
+  border-radius:12%;
+  margin:10px;
+  padding:30px;
+}
+
+form{
+  border-radius:5%;
+}
+label,p{
+  margin:0 10px 10px 20px;
+  
+}
+.form-container{
+    margin: 5px;
+  padding:10px;
+  
+  
+}
+#submit{
+  background-color:#876352;
+  color:white;
+  width:25%;
+  cursor:pointer;
+}
