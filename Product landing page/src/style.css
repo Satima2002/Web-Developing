@@ -1,0 +1,240 @@
+
+body{
+  font-family: 'Comfortaa';
+  font-size: 22px;
+  text-align:center;
+  margin:0;
+  padding:30px;
+  box-sizing:border-box;
+}
+
+li{
+  list-style:none;
+}
+a{
+  font-size:14px;
+  color:#93C8FA;
+  text-decoration:none;
+}
+h1 {
+  font-size:42px;
+  padding-top:55px;
+  margin-bottom:0;
+  color:#EDCD3B;
+}
+h2,h3{
+  font-weight:400;
+  color:#A1C175;
+  
+  font-family: 'Inter';font-size: 20px;
+}
+hr{
+  height:4px;
+  background-color:#A1C175;
+  border-width:0;
+  width:80%;
+  margin-top:0;
+  margin-bottom:50px;
+}
+@media(max-width:650px){
+  h1{
+    margin-top:50px;
+    font-size:31px;
+    margin-top:130px;
+  }
+  h3{
+    font-size:15px;
+  }
+  #nav-bar {
+    margin-bottom:5px;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  #header-img{}
+}
+header{
+  
+  align-items:center;
+  position:fixed;
+  top:0;
+  min-height:70px;
+  background-color: #fff;
+  display:flex;
+  justify-content:space-around;
+  margin:auto;
+}
+
+#nav-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: auto; /* change it to desired width */
+   
+}
+#header-img {
+    display: inline-block;
+    vertical-align: top;
+    width:60%;
+    padding-top:10px;
+  margin-left:0;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
+#nav-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+  margin:40px 20px 0 0 ;
+    height: 0;        /* if you want it to take the full height of the bar */
+    line-height: 0;    /* if you want it vertically middle of the navbar */
+  padding-top:0;
+}
+
+
+#einstein{
+  margin:0 auto;
+  height:auto;
+  width:100px;
+  max-width:80%;
+}
+.button{
+  height:40px;
+  font-size:16px;
+  padding:4px 15px;
+  background-color:#93C8FA;
+  border: 2px solid #93C8FA; 
+  border-radius:3px;
+  text-transform:uppercase;
+  color:#fff;
+  font-weight:700;
+  margin:6px;
+}
+#main{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  justify-content:center;
+  
+}
+#main input[type='email']{
+  height:28px;
+  margin:15px;
+  padding:6px;
+  max-width:220px;
+  width:100%;
+   border: 1.5px solid #EDCD3B;
+  border-radius:3px;
+}
+
+::placeholder{
+  text-align:center;
+  color:#EDCD3B;
+  font-weight:50;
+  font-size:12px;
+}
+h2{
+  margin-top:50px;
+}
+.offer{
+  margin:30px 90px;
+  
+}
+
+.offer li{
+  line-height:80px;
+  font-size:18px; 
+
+	margin: 0 0 15px 0;
+  padding-left:70px;
+  line-height:24px;
+  text-align:left;
+  color:#EDCD3B;
+}
+#proffesional{
+  background:url(https://drive.google.com/uc?export=download&id=1J8Gu3EHpcFIyY3371x15Evp0a1C_elOy) left no-repeat;
+  	background-size: auto 50px;
+}
+#speaking{
+  background:url(https://drive.google.com/uc?export=download&id=1MU4xQkGz79QzFXFTzQBlaQAwNgJx4UHa) left no-repeat;
+  background-size:auto 50px;
+}
+#quality{
+  background:url(https://drive.google.com/uc?export=download&id=1C-D9cTAwHllM6u7F_ZVWFsx19nE26oqv) left no-repeat;
+  background-size:auto 50px;
+}
+span{
+  font-size:15px;
+  color:#93C8FA;
+}
+#offer-cont h2 , #work,#price-h{
+  font-size:28px;
+  margin-bottom:40px;
+  font-family: 'Comfortaa';
+}
+#work{
+  color:#93C8FA;
+}
+#price-cont {
+  display:flex;
+  width:100%;  
+  justify-content:center;
+}
+.price{
+  width:25%;
+  border:4px solid #A1C175;
+  margin:10px;
+  padding:20px;
+  font-size:20px;
+  line-height:22px;
+}
+.price{
+  color:#EDCD3B;
+}
+.price-span{
+  font-size:11px;
+  line-height:12px;
+
+  
+}
+.cost{
+  font-family:'Comfortaa';
+  font-size:20px;
+  margin-top:30px;
+  padding-top:20px;
+  color:#A1C175;
+  text-align:center;
+}
+.footer{
+  margin-top: 30px;
+  background-color: #93C8FA;
+  padding: 20px;
+  
+}
+.footer>ul{
+  display:flex;
+  justify-content:flex-end;
+}
+.footer>ul>li{
+  padding: 0 10px;
+ 
+}
+.footer > ul > li > a{
+  font-weight:900;
+  color:#fff;
+  padding:0;
+}
+.footer>span{
+  display:flex;
+  justify-content:flex-end;
+  font-size:14px;
+  color:white;
+  margin-top:5px;
+}
+
+
+
+
