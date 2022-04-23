@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Graph</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="540" height="540" style="border:1px solid #000000;">
+</canvas>
+<script>
+		//Здесь мои изменить свои параметры
+		var a=1;
+		var b=1
+		var c=2;
+		//функция
+		let y = x => a*(x**2)+2*b*x+c;
+
+		let scale = 30;
+		let step = 1;
+		let cnvs = document.getElementById('myCanvas');
+		let ctx = cnvs.getContext('2d');
+
+		ctx.lineWidth = 0.5;
+
+		for (var i = step*scale; i < cnvs.width; i += step*scale) { //вертикальные
+		  polyline('#000', [[i, 0], [i, cnvs.height]]);
+		}
+
+		for (var i = step*scale; i < cnvs.height; i += step*scale) { //Горизонтальные
+		  polyline('#000', [[0, i], [cnvs.width, i]]);
+		}
+
+		ctx.lineWidth = 2;
+		let pts = [];
+		for(let x = -cnvs.width/2; x<cnvs.width/2; x+=5) {
+		    pts.push([cnvs.width/2+x, cnvs.height/2 - y(x/scale)*scale]);
+		}
+		polyline('green', pts);
+
+		
+		polyline('black', [[0, cnvs.height / 2], [cnvs.width, cnvs.height / 2]]);
+
+		
+		polyline('black', [[cnvs.width / 2, 0], [cnvs.width / 2, cnvs.height]]);
+
+		function polyline(color, pts) {
+		  ctx.strokeStyle = color;
+		  ctx.beginPath();
+		  pts.forEach((p, i) => i ? ctx.lineTo(...p) : ctx.moveTo(...p));
+		  ctx.stroke();
+		}
+
+	
+
+</script>
+</body>
+</html>

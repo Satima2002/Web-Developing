@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Регистрация на квест</h1>
+	<div class="form-container">
+		<form action="http://193.233.69.42:15980/testvvk/test_control.php" method="post" target="_blank">
+			<table>
+				<tr>
+					<td id="team-name-cell">
+					
+							<label for="tname">Название команды:</label><br>
+						   	<input type="text" name="prm1" id="tname" required="" placeholder="Введите название команды">
+						
+					</td>
+					<td colspan="2" id="date-cell">
+						
+							<label for="date">Дата:</label>
+							<input type="date" name="date" id="date" required="">
+							<br>
+							<br>
+							<label for="stime">Время начала:</label>
+							<input type="time" name="prm2" id="stime" required="">
+							<label for="etime">Время конца:</label>
+							<input type="time" name="prm3" id="etime" required="">
+						
+					</td>
+				</tr>
+				<tr>
+					<td id="phone-cell">
+					
+							<br>
+							<label for="phone">Телефон</label>
+							<input type="tel" name="prm4" id="phone" placeholder="+7 ХХХ-ХХХ-ХХ" required="">
+							<br>
+							<br>
+							<label for="email">E-mail</label>
+							<input type="email" name="prm5" id="email" required="" placeholder="example@email.com">
+					
+					</td>
+					<td id="age-cell">
+						
+							<label for="age">Возрастная категория</label>
+							<br>
+			  				<label for="6-12">6-12</label>
+			  				<input type="radio" id="age" name="prm6" value="6-12" selected ><br>
+			  				<label for="12-16">12-16</label>
+			  				<input type="radio" id="age" name="prm6" value="12-16"><br>
+			  				<label for="16-18">16-18</label>
+			  				<input type="radio" id="age" name="prm6" value="16-18"><br>
+			  				<label for="18+">18+</label>
+			  				<input type="radio" id="age" name="prm6" value="18+">
+			  				
+						
+					</td>
+					<td id="type-cell"> 
+						
+							<br>
+							<label for="type">Тип квеста</label><br>
+							<select id="type" name="prm7">
+			   					<option value="Квест на убийство">Квест на убийство</option>
+			   					<option value="Квест на доставку">Квест на доставку</option>
+			   					<option value="Квест по сбору предметов">Квест по сбору предметов</option>
+			   					<option value="Квест сопровождение">Квест сопровождение</option>
+			   				</select>
+			   		
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" id="cost-cell">
+						
+			   				<label for="money">Цена не более чем (в тысячах)</label>
+			   				<input type="number" id="money" name="prm8" required="">
+			   				<label for="team-player">Количество членов команды</label>
+			   				<input type="number" name="prm9" id="team-player">
+			   	
+			   			
+					</td>
+				</tr>
+				<tr>
+					<td id="station-cell">
+						
+			   				<label for="station">Станция метро:</label><br>
+			   				<input type="text" id="station" name="prm10" reqired>
+			   		
+					</td>
+					<td id="game-cell">
+					
+			   				<p>Тип игры</p>
+			   				<label for="type1">Квест в реальности</label>
+			   				<input type="checkbox" id="type1" name="prm11" value="Квест в реальности"><br>
+			   				<label for="type2">Перфоманс</label>
+			   				<input type="checkbox" id="type2" name="prm12" value="Перфоманс"><br>
+			   				<label for="type3">Экшн-игра</label>
+			   				<input type="checkbox" id="type3" name="prm13" value="Экшн-игра"><br>
+			   				<label for="type4">VR-квест</label>
+			   				<input type="checkbox" id="type4" name="prm14" value="VR-квест">
+
+			   				<p>Тип оплаты</p>
+			   				<label for="card">Оплата картой</label>
+			   				<input type="checkbox" id="card" name="prm15" value="Оплата картой"><br>
+			   				<label for="english">Английская версия</label>
+			   				<input type="checkbox" id="english" name="prm16" value="Английская версия"><br>
+			   		
+					</td>
+					<td  id="submit-cell">
+					
+			   				<input type="submit" value="Отправить" >
+			   			
+					</td>
+				</tr>
+
+			</table>
+				
+  		</form>
+	</div>
+</body>
+</html>
